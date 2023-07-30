@@ -12,7 +12,7 @@ const GithubProjects = [
     repository: "https://github.com/WeslleyCastro/Promptopia"
   },
   {
-    src:"/assets/images/movieLib.png",
+    src:"/assets/images/movielib.png",
     title: "MovieLib",
     language: ["javaScript", "react", "css"],
     about: ["O objetivo do projeto é apresentar os filmes melhores avaliados pelo IMDB, também é possível pesquisar filmes pelo nome e ver suas informações de custo, avaliação, descrição, duração e receita.", "Com o React.js, o site foi criado seguindo o conceito de SPA(single page application), então mesmo realizando a pesquisa por filmes ou acessando os detalhes do filme, nao há o carregamento da pagina, assim entregando uma melhor experiência para o usuario.", "Com a componentização do React, assim como o card e na pagina de descrição, foi passado as informações utilizando props drilling. Utilizei tambem a API IMDB para acessar os dados dos filmes com API REST."],
