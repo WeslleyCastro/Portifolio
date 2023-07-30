@@ -2,8 +2,8 @@
 
 import { League_Spartan } from "next/font/google"
 import "./style.scss"
-import { BiLogoJavascript, BiLogoReact, BiLogoGit, BiLogoTypescript, BiLogoSass} from "react-icons/Bi"
-import { SiStyledcomponents } from "react-icons/Si"
+import { BiLogoJavascript, BiLogoReact, BiLogoGit, BiLogoTypescript, BiLogoSass} from "react-icons/bi"
+import { SiStyledcomponents } from "react-icons/si"
 import { Reveal } from "@/utils/Reveal"
 import Typewriter from "typewriter-effect"
 

@@ -2,9 +2,9 @@
 
 import { League_Spartan } from "next/font/google"
 import "./styles.scss"
-import { BsFillTelephoneFill } from "react-icons/Bs"
-import { FaGithub, FaLinkedin} from "react-icons/Fa"
-import { LuCopyCheck } from "react-icons/Lu"
+import { BsFillTelephoneFill } from "react-icons/bs"
+import { AiFillGithub, AiFillLinkedin} from "react-icons/ai"
+import { LuCopyCheck } from "react-icons/lu"
 import { useState } from "react"
 import { Reveal } from "@/utils/Reveal"
 import emailjs from "@emailjs/browser"
@@ -72,8 +72,8 @@ export const Contact = () => {
           <form onSubmit={handleSubmit}>
             <div className="contact-method">
               <span>
-                <a href="https://github.com/WeslleyCastro" target="_blank"><FaGithub/></a>
-                <a href="https://www.linkedin.com/in/weslley-castro-da-silva/" target="_blank"><FaLinkedin/></a>
+                <a href="https://github.com/WeslleyCastro" target="_blank"><AiFillGithub/></a>
+                <a href="https://www.linkedin.com/in/weslley-castro-da-silva/" target="_blank"><AiFillLinkedin/></a>
               </span>
               <span className="contact-number" onClick={handleCopyNumber}>
                 (11) 946282716 {copy ? <LuCopyCheck/> : <BsFillTelephoneFill/>}

@@ -1,6 +1,6 @@
-import { BiLogoJavascript, BiLogoMongodb, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript, BiLogoCss3} from "react-icons/Bi"
-import { SiNextdotjs, SiStyledcomponents } from "react-icons/Si"
-import { AiFillGithub, AiOutlineLink } from "react-icons/Ai"
+import { BiLogoJavascript, BiLogoMongodb, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript, BiLogoCss3} from "react-icons/bi"
+import { SiNextdotjs, SiStyledcomponents } from "react-icons/si"
+import { AiFillGithub, AiOutlineLink } from "react-icons/ai"
 import "./styles.scss"
 import { Reveal } from "@/utils/Reveal"
 
