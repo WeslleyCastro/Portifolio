@@ -1,0 +1,41 @@
+:root {
+  --dark-gray: #282C2E;
+  --light-gray-200: #888888;
+  --light-gray-600: #595959;
+  --orange: #852f40;
+  --dark-orange: #551e29;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  color: var(--orange);
+  text-decoration: none ;
+}
+
+input, textarea, button {
+  outline: none;
+  border: 0;
+  resize: none;
+}
+
+svg{
+  color: var(--light-gray-200);
+}
+
+svg:not(#upButton):hover{
+  color: var(--orange);
+  transform: scale(1.1);
+}
+
+html,
+body {
+  background-color: var(--dark-gray);
+  max-width: 100vw;
+  scroll-behavior: smooth;
+}

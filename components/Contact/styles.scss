@@ -1,0 +1,103 @@
+.contact-container{
+  padding: 0 0.5rem;
+  width: 100%;
+
+    h2{
+      font-size: 2rem;
+      letter-spacing: 2px;
+      color: var(--orange);
+      font-weight: 600;
+      text-align: center;
+      padding: 4rem 0;
+    }
+
+    .contact-form{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .contact-img{
+        display: none;
+        margin-bottom: 5rem;
+        
+          img{
+            width: 500px;
+            margin-bottom: 0.8rem;
+          }
+      }
+
+      form{
+          display: flex;
+          flex-direction: column;
+          min-width: 350px;
+          gap: 1.5rem;
+          padding: 1rem;
+
+          .contact-method {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            
+            a{
+              font-size: 30px;
+              margin-right: 12px;
+            }
+
+            .contact-number{
+              cursor: pointer;
+              letter-spacing: 1px;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              color: var(--light-gray-200);
+              font-weight: 500;
+                &:hover{
+                  color: var(--orange);
+                }
+            }
+          }
+
+          input, textarea, button {
+            font-family: "Roboto", sans-serif;
+            border-radius: 4px;
+            padding: 1rem;
+
+            &:focus{
+             outline: 2px solid var(--orange);
+            }
+          }
+          
+          textarea{
+            height: 100px;
+          }
+
+        button{
+          background-color: var(--orange);
+          color: white;
+          transition: 0.2s;
+          font-weight: bold;
+
+          &:hover{
+            background-color: var(--dark-orange)
+          }
+        }
+      }
+    }
+
+  @media (min-width: 1200px) {
+    .contact-form{
+      justify-content: space-evenly;
+    }
+    
+    .contact-form .contact-img{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    form{
+      width: 500px;
+    }
+  }
+}

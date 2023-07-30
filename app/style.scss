@@ -1,0 +1,57 @@
+main{
+  position: relative;
+}
+
+section{
+  min-height: 100vh;
+}
+
+
+#introduction-section{
+  background-color: #131313;
+}
+
+#about-section{
+  margin: 4rem 0;
+}
+
+
+#contact-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#scrollUp{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 3rem;
+  bottom: 20vh;
+  background-color: var(--orange);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+
+  svg{
+    font-size: 3.5rem;
+  }
+
+  @media (min-width: 1200px){
+    display: flex;
+    animation: rotate 1.5s;
+
+  @keyframes rotate {
+    from{ 
+      right: 0;
+      rotate: (180deg)
+    }
+    to{ 
+      right: 3rem;
+      rotate: (360deg)
+    }
+  }
+  }
+}

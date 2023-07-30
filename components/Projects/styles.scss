@@ -1,0 +1,27 @@
+.project-container{
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+
+  .projects-content{
+    padding: 1.5rem;
+    width: 100%;
+    background-color: #131313;
+    border-radius: 8px;
+  }
+
+  h2{
+    padding: 3rem 0 6rem;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: var(--orange);
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  @media (min-width: 900px){
+   .projects-content{
+    width: 80vw;
+    }
+  }
+}

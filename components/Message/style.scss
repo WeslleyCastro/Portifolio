@@ -1,0 +1,15 @@
+.message-box {
+  border-radius: 8px;
+  color: #fff;
+  position: fixed;
+  top: 20px;
+  right: -100px;
+  height: 70px;
+  width: 250px;
+  z-index: 20;
+  background-color: rgb(15, 68, 15);
+  display: flex;
+  padding: 4px;
+  align-items: center;
+  justify-content: center;
+}

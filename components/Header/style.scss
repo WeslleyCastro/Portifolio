@@ -1,0 +1,49 @@
+header{
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem 2rem;
+  width: 100%;
+
+  nav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+    span{
+      color: #fff;
+      font-size: 1.3rem;
+      display: none;
+      position: relative;
+      height: 30px;
+      cursor: pointer;
+
+      &::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        background-color: var(--orange);
+        transition: .5s;
+      }
+
+      &:hover:before{
+        width: 100%;
+      }
+
+    }
+  
+    svg{
+      font-size: 2rem;
+    }
+  }
+
+  @media (min-width: 1200px){
+    nav span{
+      display: inline-block;
+    }
+    
+  }
+}

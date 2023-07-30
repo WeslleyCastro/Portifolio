@@ -1,0 +1,95 @@
+.about-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+
+
+  .about-text{
+    border-radius: 8px;
+    margin: 0 1rem;
+    background-color: #131313;
+    padding: 1rem 2.5rem;
+    color: white;
+
+    h2{
+      font-size: 2rem;
+      margin: 1rem 0 2rem;
+    }
+
+    p{
+      margin-bottom: 24px;
+      line-height: 24px;
+    }
+  }
+
+  .about-courses{
+    position: relative;
+    margin-left: 4rem;
+    
+    &::after{
+      bottom: 0;
+      left: -2rem;
+      height: 100%;
+      content: "";
+      position: absolute;
+      top: calc(15px - 0vh) ;
+      width: 5px;
+      background-color: var(--orange);
+    }
+    
+    .about-courses-box{
+      color: white;
+      background-color: #131313;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      padding: 0.7rem;
+      line-height: 24px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      position: relative;
+      width: 300px;
+      
+      &::after{
+        content: "";
+        position: absolute;
+        top: 10px;
+        background-color: var(--orange);
+        width: 33px;
+        height: 5px;
+        left: -2rem;
+      }
+
+
+      h3{
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+    gap: 7rem;
+
+    .about-text{
+      width: 600px;
+    }
+
+    .about-courses{
+      &::after{
+        left: -5rem;
+      }
+
+      .about-courses-box{
+        &:after{
+          width: 80px;
+          left: -5rem;
+        }
+      }
+    }
+
+
+    
+  }
+}
